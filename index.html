@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Moni &amp Three-Rex</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Didact+Gothic&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="W3.css">
+    <script src="app.js"></script>
+
+    <!-- 
+    table sorter copy the following two javascript link to the <head> portion of your html file
+-->
+<!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+<script
+type="text/JavaScript"
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+></script>
+<script
+type="text/JavaScript"
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+></script>
+  <!--end of js for table sorter-->
+    
+<style type="text/css">
+
+
+      .center {
+  text-align: center;
+  }
+  <!--/*carousel*/--->
+  * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+  <!--/*carousel end*/-->
+
+
+
+  <!--top nav right aligned-->
+  body {
+  margin: 0;
+  font-family: Barlow Condensed; sans-serif
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #FFF5F0;
+}
+
+.topnav a {
+  float: left;
+  color: #FFF5F0;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+<!--end of top nav right aligned-->
+
+<!--Responsive Embedded YouTube Videos</title-->
+        .video-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px; /* Add some space between videos */
+            overflow-x: auto; /* Enable horizontal scrolling on small screens */
+        }
+
+        .video-container iframe {
+            width: calc(33.33% - 10px); /* 33.33% width for each video with margin */
+            max-width: 400px; /* Set a max width for larger screens */
+            margin-right: 10px; /* Add some space between videos */
+        }
+
+        @media only screen and (max-width: 600px) {
+            /* Adjust styles for smaller screens */
+            .video-container {
+                flex-wrap: nowrap; /* Prevent wrapping on small screens */
+                overflow-x: scroll; /* Enable horizontal scrolling */
+            }
+
+            .video-container iframe {
+                width: calc(100% - 10px); /* Full width for each video on small screens */
+                max-width: none; /* Remove max width */
+                margin-right: 10px; /* Add some space between videos */
+            }
+        }
+
+<!--end of responsive video styles-->
+
+    </style>
+</head>
+<body>
+
+
+<!--Homepage with logo and navbar-->
+
+
+
+    <div class="topnav">
+      
+      <img class="mylogo" src="images/Group 1.png" alt="logo">
+    </div>
+      <div class="topnav-right">
+      <a href="#Search">Search</a>
+      <a href="#Basket">Basket</a>
+      </div>
+  
+
+    
+
+
+
+<!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-card w3-sand w3   
+       padding  w3-wide" id="myNavbar">
+        <div>
+      <a class="w3-padding-large w3-hide-small w3-right">
+      <i class="fa fa-shopping-basket w3-text-brown"></i></a>
+      <a class="w3-padding-large w3-hide-small w3-right">
+      <i class="fa fa-search w3-text-brown"></i
+          ></a>
+        </div>
+        <a href="#home" 
+        class="w3-bar-item w3-button w3-wide w3-xlarge w3-text-brown"
+        >Moni &amp Three-Rex</a>
+
+<!--Right-sided navbar links-->
+
+        <div class="w3-right w3-hide-small" style="padding-top: 5px">
+          <a href="#Outdoors" class="w3-bar-item w3-button w3 large">Outdoors</a>
+          <a href="#Indoors" class="w3-bar-item w3-button w3-large">Indoors</a>
+          <a href="#Seasonal" class="w3-bar-item w3-button w3-large">Seasonal</a>
+          <a href="#Affirmations" class="w3-bar-item w3-button w3-large">Affirmations</a>
+          <a href="#Let's Talk About It" class="w3-bar-item w3-button w3-large">Let's Talk About It</a>
+          <a href="#3 Year Old Development" class="w3-bar-item w3-button w3-large">3 Year Old Development</a>
+
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+<!-- Sidebar on small screens when clicking the 
+     menu icon -->
+    <nav
+    class="w3-sidebar w3-bar-block w3-sand w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display: none" 
+    id="mySidebar">
+      <a href="javascript:void(0)"
+      onclick="w3_close()" 
+      class="w3-bar-item w3-button w3-large w3-padding-16"
+      >Close &times;</a>
+
+      <a href="#Outdoors" onclick="w3_close()" class="w3-bar-item w3-button">Outdoors</a>
+      <a href="#Indoors" onclick="w3_close()" class="w3-bar-item w3-button">Indoors</a>
+      <a href="#Seasonal" onclick="w3_close()" class="w3-bar-item w3-button">Seasonal</a>
+      <a href="#Affirmations" onclick="w3_close()" class="w3-bar-item w3-button" >Affirmations</a>
+      <a href="#Let's Talk About It" onclick="w3_close()" class="w3-bar-item w3-button">Let's Talk About It</a>
+      <a href="#3 Year Old Development" onclick="w3_close()" class="w3-bar-item w3-button">3 Year Old Development</a>
+    </nav>
+    
+    <h2>Come Play With Us</h2>
+
+<!-- Header with full-height image -->
+    <header class="my-bgimg w3-display-container" id="home">
+      <div class="w3-display-bottomleft w3-padding-small w3-hide-small">
+      </div>
+    
+    </header>
+
+
+    <hr/>
+
+    
+
+
+
+
+<!--Outdoors-->
+
+
+
+
+<!--Outdoors with carousel-->
+
+ <div id="Outdoor Potions" class="w3-padding-top-64">
+  <h1 class="w3-center">Outdoors</h1>
+  <div class="w3-content" style="max-width: 1200px">
+  <h2>Potion Making With Organic and Non-Organic Materials</h2>
+
+<div class="carousel">
+
+    <div class="carousel-slide">
+      <img src="images/potion1.png" alt="potion 1">
+  </div>
+    <div class="carousel-slide">
+      <img src="images/potion2.png" alt="potion 2">
+  </div>
+    <div class="carousel-slide">
+      <img src="images/potion3.png" alt="potion 3">
+  </div>
+    <div class="carousel-slide">
+      <img src="images/potion4.png" alt="potion 4">
+  </div>
+    <div class="carousel-slide">
+      <img src="images/potion5.png" alt="potion 5">
+  </div>
+    <div class="carousel-slide">
+      <img src="images/potion6.png" alt="potion 6">
+  </div>
+      <div class="carousel-slide">
+      <img src="images/potion7.png" alt="potion 7">
+  </div>
+    <div class="carousel-slide">
+      <img src="images/potion8.png" alt="potion 8">
+  </div>
+    <div class="carousel-slide">
+      <img src="images/potion9.png" alt="potion 9">
+  </div>
+    <div class="carousel-slide">
+      <img src="images/potion10.png" alt="potion 10">
+  </div>
+    <div class="carousel-slide">
+      <img src="images/potion11.png" alt="potion 11">
+  </div>
+  <script src="script.js"></script>
+
+</div>
+<a class="next" onclick="plusSlides(1)">❯</a>
+  
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+  <span class="dot" onclick="currentSlide(11)"></span> 
+
+</div>
+</div>
+<img class="mySlides" src="images/" style="width:100%">
+        <img class="mySlides" src="images/potion1.png" style="width:100%">
+        <img class="mySlides" src="images/potion4.png" style="width:100%">
+        <img class="mySlides" src="images/potion9.png" style="width:100%">
+        <script>
+      var myIndex = 0;
+carousel();
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {
+    myIndex = 1;
+  }
+  x[myIndex - 1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+// slideshow - carousel
+function currentDiv(n) {
+  showDivs((slideIndex = n));
+  myIndex = n;
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " w3-opacity-off";
+}
+
+      </script>
+<!----/*end of carousel*/---->
+
+<!--end of carousel-->
+
+
+
+
+<!--DIY "you are my everything potion" w/ scroll--> 
+    
+      <div
+        class="w3-center w3-brown"
+        style="margin-left: -16px; margin-right: -16px; margin-top: -18px"
+      > 
+    </div>
+    <div
+      class="w3-col m4 w3-panel w3-brown w3-border-left w3-border-top w3-border-bottom w3-padding"
+    >
+      <div
+        class="w3-center w3-sand"
+        style="margin-left: -16px; margin-right: -16px; margin-top: -18px"
+      >
+      </div>
+    </div>
+
+    <div
+      class="w3-col m4 w3-panel w3-sand w3-border-left w3-border-bottom w3-border-right w3-padding"
+    >
+      <div
+        class="w3-center w3-brown"
+        style="margin-left: -16px; margin-right: -16px; margin-top: -18px"
+      >
+        <h3>DIY Potion Recipe: Don't Worry, Be Happy</h3>
+        
+      </div>
+      <div class="my-scrolling" style="padding-right: 10px">
+        <p>
+          <h4>PREPARATION: 
+          potion bottle with lid (or jar), glitter, feather
+          </p>
+        <p> OVERVIEW:
+          A worry can be dark and even scary. Follow the instructions and fill the bottle with items that represent those worries. Then find out how the power of magic release those worries.  
+        </p>
+
+        <p>
+          Go outside and find the following:
+          <li>fill the bottle 1/2 way with something dry and is black or brown, such  bark or dirt</li>
+          <li>1 crooked twig</li>
+          <li>2 pebbles</li>
+        </p>
+        <p>
+          Sit down, hold the bottle to your chest, look inside the potion bottle and look at the worries inside. Take a deep breath and breathe out the junk. 
+        Now find the rest of the items from nature: 
+          <li>something yellow to bring those happy feelings and erase the bad</li>
+          <li>something bright </li>
+        </p>
+        <p>
+          Add the Non-Organic Materials:          
+          <li>1 feather</li>
+          <li>2 pinches of glitter</li>
+        </p>
+        <p>
+          Listen for birds and sit down where you can hear them
+          <li>put the top on your potion and shake it as hard as you can</li>
+          <li>hold the potion bottle close to your chest and say “go away worries, I’m releasing you to the clouds</li>
+          <li>close your eyes and take a deep breath</li>
+          <li>now hold the potion high up to the sky and tell the birds to take the worries</li>
+          <li>Listen closely, do you hear the birds chirping. That means they hear you and are here to help.</li>
+          <li>Good bye worries. Do you feel better? </li>
+        </h4>
+        </p>
+      </div>
+    </div>
+ 
+
+<!--end of diy potion with scroll-->
+<!--end of content page "outdoors"-->
+
+
+
+<!--Indoors-->
+<!--Indoors with table grid-->
+
+
+ <!-- Indoor Activity Chart -->
+ <div id="Indoors" class="w3-padding-top-64">
+  <h1 class="w3-center">Indoors</h1>
+  <div class="w3-content" style="max-width: 1200px"> 
+  <h2>Activity Chart For Planning Your Day </h2>
+    <div class="w3-responsive">
+    
+    <table id="myTable" class="w3-table-all">
+      <thead>
+        <tr class="w3-brown">
+          <th></th>
+          <th><h3>Age</h3></th>
+          <th><h3>Activity/Skills</h3></th>
+          <th><h3>Time Duration</h3></th>
+        </tr>
+      </thead>
+      <tr class="w3-hover-sand">
+        <td><img src="images/table puzzle.jpg" style="width: 120px" /></td>
+        <td><h4>36 months</h4></td>
+        <td><h4>Anatomy Puzzels
+          <ul>
+            <li>helps children visualize body systems and organs</li>
+            <li>promotes hand-eye coordination</li>
+            <li>creative expression</li>
+            <li>imaginative play</li>
+          </h4>
+          </ul>
+        </td>
+        <td><h4>10 minutes</h4></td>
+      </tr>
+      <tr class="w3-hover-sand">
+        <td>
+          <img src="images/daddy.jpg" style="width: 120px" />
+        </td>
+        <td><h4>36 months</h4></td>
+        <td><h4>Drawing
+          <ul>
+            <li>can draw circles, squares, crosses & dots</li>
+            <li>shapes that resemble letters T, V, & H</li>
+            <li>“tadpole” people</li>
+            <li>drawings are not premeditated but they will tell you what their drawings represent</li>
+            <li>often uses 1 color</li>
+            <li>able to grip crayons better</li>
+          </h4>
+          </ul>
+        </td>
+        <td><h4>15 minutes</h4></td>
+      </tr>
+      <tr class="w3-hover-sand">
+        <td><img src="images/blocks.jpg" style="width: 120px" /></td>
+        <td><h4>42 months</h4></td>
+        <td><h4>Block Building
+          <ul>
+            <li>at this age they end up building rows, stacks and adding bridges, forming passageways, known as bridging.</li>
+            <li>learns by trail and error on how to balance blocks</li>
+            <li>adds other toys to build with such as car tracks and cards to balance toys on top</li>
+            <li>builds structures and platforms to replicate homes and beds for small figurines</li>
+          </h4>
+          </ul>
+        </td>
+        <td><h4>25 minutes</h4></td>
+      </tr>
+      <tr class="w3-hover-sand">
+        <td>
+          <img src="images/laundry.jpg" style="width: 120px" />
+        </td>
+        <td><h4>42 months</h4></td>
+        <td><h4>Laundry Helper
+          <ul>
+            <li>sorting colors</li>
+            <li>matching socks</li>
+            <li>teaches good hygiene</li>
+          </h4>
+          </ul>
+            </td>
+        <td><h4>10 minutes</h4></td>
+      </tr>
+      <script>
+  // sortable table
+  $(document).ready(function () {
+    $("table#myTable").tablesorter({
+      sortList: [[1, 0]], // first index - column. second index - 0 for asc; 1 for desc
+      CssAsc: "tablesorter-headerAsc",
+      CssDesc: "tablesorter-headerDesc",
+    });
+  });
+</script>
+    </table>
+  </div>
+</div>
+
+<!--end of indoor actvities with grid table-->
+<!--end of content page "indoors"-->
+
+
+
+<!--Seasonal-->
+<!--Seasonal with pic and text wrap(2) and hyperlinks(2)-->
+
+    <div class="w3-content" style="max-width: 1200px">
+      <!--  -->
+      <div id="Seasonal Fun" class="w3-padding-top-64">
+        <h1 class="w3-center">Seasonal Fun</h1>
+        <div class="w3-padding-large">
+          <h2>It's Almost Valentine's Day. The Theme Is Hearts.</h2>
+          <h3>Morning Craft</h3>
+          <p>
+            <img
+              src="images/img:vdayprep.jpg"
+              class="w3-round w3-image my-float-left my-img-size-2"
+              alt="seasonal crafts"
+              style="width: 100%"
+            />
+<h4>PREPERATION: The night before I set the craft table with various art supplies for decorating. These items can be crayons, hearts cut outs from a magazine, construction paper, or recycled color book pages, gems, stickers or abstract shapes cut from paper. They will also need a blank canvas to decorate such as a paper pre cut heart, or draw a heart on a piece of cardboard or blank sheet of paper. Lastly they will need glue. We use the purple glue stick that dries clear and silver craft glitter glue. The glitter glue is inside the recycled make up jar (gold top). The bottle is hard to squeeze so she applies the glitter glue with a small paint brush or cotton swab. The main goal is to have the child decorate something shapped like a heart in order to stay within the heart themed activity. Washable Glitter Glue by Craft Smart can be found at Michaels Craft Store or online.</h4>
+
+<span
+>Reference:
+<a
+  href="https://www.michaels.com/product/washable-glitter-glue-by-craft-smart-M20033465
+  "
+  target="_blank"
+  class="w3-hover-opacity"
+  >https://www.michaels.com/product/washable-glitter-glue-by-craft-smart-M20033465
+  </a
+></span></p>
+</div>
+<div class="w3-padding-large">
+        <p>
+          <h4>TASK: Using these supplies, decorate the 4 hearts that have been cut out of purple card stock. While you craft I will be making breakfast (and possibly starting a load of laundry or emptying the clean dishes from the dishwasher).</p>
+
+    <ul>Inside the craft box:
+        <li class="list">gems in various sizes</li>
+        <li class="list">foam stickers</li>
+        <li class="list">markers</li>
+        <li class="list">glue stick</li>
+        <li class="list">small paint brush</li>
+        <li class="list">silver glitter glue (container with gold top)</li>
+      </h4>   
+  </ul>
+</div>
+
+<div class="w3-padding-large">
+
+
+  <h3>Breakfast</h3>
+<p>
+  <h4>Healthy Heart Shaped Food Ideas:</h4>
+  </p>
+<div class="row">
+  <div class="column">
+    <img src="images/img_hearttoast2 1.png" alt="heart toast" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/np_Heart shape made of red healthy food, fruits, and vegetables with green leaves_5RdYDb_free 1.png" alt="healthy food heart" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/np_Heart shaped waffles top view on a green table_5rWm14_free 1.png" alt="waffles" style="width:100%">
+  </div>
+</div>
+
+        <div class="w3-padding-large">
+          <h3>Educational Play</h3>
+          <p>
+            <img
+              src="images/img:anatomypuzzle.png"
+              class="w3-round w3-image my-float-right my-img-size-2"
+              alt="learn about the heart"
+              style="width: 100%"
+            />
+            <h4>We love to play with our Magnetic Human Body Anatomy Playset made by Melissa & Doug. This puzzle comes with over 20 magnetic pieces and helps to visualize the body systems and location of organs. In addition to the major body systems the puzzle comes with male and female layers. This makes the introduction easy to talk about both boy and girl body parts. Give your child some time to independently match the different layers and complete each body system. Then sit down with your child and talk about the vascular or circulatory system and the important role of our hearts. Here are some playful discussion tips:</h4>
+        </p>
+      </div>
+      <div class="w3-padding-large">
+        <p>
+
+          <ul><h4>Key Facts:
+            <li class="list">Describe the heart as a small, powerful muscle in our chest that works like a pump or an engine. The heart pumps blood around the body delivering oxygen and nutrients it need to function.</li>
+            <li class="list">The blood pumped by your heart travels through arteries (red), and veins (blue). Think of them as roads or playground tunnel slides in our body. </li>
+            <li class="list">Make a fist, hold it to your chest. That’s how big your heart is! </li>
+            </h4>
+      </ul>
+
+      <ul><h4>Your Heart Has Such An Important Job- Here Are Ways To Keep Your Heart Healthy:
+            <li class="list">Keep moving. Physical activity is important to incorporate everyday.</li>
+            <li class="list">Limit screen time. Excessive screen time leads to a sedentary lifestyle and constant snacking. Don't be a couch potatoe.</li>
+            <li class="list">Maintain wellness visits with your doctor.</li>
+            <li class="list">Eat healthy. Whole wheat or grains, apples, low-fat dairy products such as Greek Yogurt and string cheese, poultry, fish and nuts.</li>
+          </h4>
+
+      </ul>
+  <span
+              >Reference:
+              <a
+                href="https://www.amazon.com/Melissa-Doug-Magnetic-Anatomy-Storage/dp/B001SVX6NI"
+                <div class="w3-padding-large">   
+                target="_blank"
+                class="w3-hover-opacity"
+                >https://www.amazon.com/Melissa-Doug-Magnetic-Anatomy-Storage/dp/B001SVX6NI
+                </a
+              ></span>
+              <div class="w3-padding-large"></div>
+              <div class="w3-padding-large"></div>
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-padding-large">
+
+      <hr />
+<!--end of seasonal-->
+<!--end of content page "Seasonal"-->
+
+
+
+<!--Affirmations-->
+<!--Affirmations with lightbox and accordion-->
+
+
+<!-- lightbox content -->
+
+      
+
+      <div id="Affirmations" class="w3-container w3-padding-top-64">
+        <h1 class="w3-center">Affirmations</h1>
+        <div class="w3-row-padding" style="margin: 15px 0px">
+            <div class="w3-col s4">
+
+        <h3>af·firm·a·tion
+          /ˌafərˈmāSHən/</h3>
+          
+            <div class="w3-row-padding" style="margin: 15px 0px">
+              <div class="w3-col s4">
+
+        <h3>Emotional support or encouragement. Positive affirmations helps kids to gain confidence, contributes to a growth mindset, and helps kids to truly believe in themselves. Kids need to hear what makes them special and strong over and over again.</h3>
+            <div class="w3-row-padding" style="margin: 15px 0px">
+              <div class="w3-col s4">
+
+            <h2>Mindful Affirmation Reminders</h2>
+
+            <div class="row">
+  <div class="column">
+    <img src="images/Aff1.png" alt="aff1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/Aff2.png" alt="aff2" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/Aff3.png" alt="aff3" style="width:100%">
+  </div>
+
+  <div class="row">
+  <div class="column">
+    <img src="images/Aff4.png" alt="aff4" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/Aff5.png" alt="aff5" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/Aff6.png" alt="aff6" style="width:100%">
+    
+  </div>
+
+
+
+<!--start of zoom -->
+  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+          <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" style="cursor: pointer">×</span>
+          <div class="w3-modal-content w3-animate-zoom">
+            
+            <img src="images/Aff1.png" style="width: 100%">
+          </div>
+        </div>        
+
+<!--End of Picture Grid w/ Lightbox-affirmations-->
+
+<h2>Morning and Evening Affirmations</h2>
+
+
+<!--start of Accordion content-affirmations-->
+
+      <div class="w3-row">
+        <div class="w3-col s6 w3-left" style="padding-right: 3px">
+          <button
+            onclick="myAccordion('accordion1')"
+            class="w3-button w3-block w3-brown w3-center-align"
+          >
+
+          
+            <h4>Start Your Day With Positivity <i class="fa fa-caret-down"></i></h4>
+          </button>
+          <div
+            id="accordion1"
+            class="w3-hide w3-container"
+            style="height: 260px"
+          >
+            <p>
+            <ul>
+              <li>Everyday is a fresh start</li>
+              <li>Today I will face my fears</li>
+              <li>I matter</li>
+              <li>I am fun</li>
+              <li>I believe in myself</li>
+              <li>I respect myself</li>
+              <li>I am brave</li>
+              <li>I have people that care about me</li>
+            </ul>
+          </p>
+          </div>
+        </div>
+        <div class="w3-col s6 w3-left" style="padding-left: 3px">
+          <button
+            onclick="myAccordion('accordion2')"
+            class="w3-button w3-block w3-brown w3-center-align"
+          >
+            <h4>End Your Day With Positivity <i class="fa fa-caret-down"></i></h4>
+          </button>
+          <div
+            id="accordion2"
+            class="w3-hide w3-container"
+            style="height: 260px"
+          >
+            <p>
+              <ul>
+              <li>Today I choose happiness</li>
+              <li>I am safe</li>
+              <li>I make a differnce</li>
+              <li>I controlled my big emotions</li>
+              <li>I did something hard</li>
+              <li>I respected others and used kind words</li>
+              <li>I shared and waited my turn</li>
+              <li>I have good manners</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+  function myAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+      x.previousElementSibling.className =
+        x.previousElementSibling.className.replace(
+          "w3-brown",
+          "w3-2021-raspberry-sorbet"
+        );
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+      x.previousElementSibling.className =
+        x.previousElementSibling.className.replace(
+          "w3-2021-raspberry-sorbet",
+          "w3-brown"
+        );
+    }
+  }
+</script>
+     
+    </div>
+
+  
+      
+<!--end of content page Affirmations-->
+
+
+
+
+
+<!--Let's Talk About it YouTube Videos(2)-->
+
+ <!-- Videos -->
+ <div id="Let's Talk About It" class="w3-container w3-padding-top-64">
+  <h1 class="w3-center">Let's Talk About It</h1>
+  <div class="w-3-responsive"></div>
+  <h2>Make Learning About Safety Fun </h2>
+
+  <div class="video-container">
+   
+
+<div class="w30-row">
+  <div class="w3-row m4 w3-center">
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5EnPKvUSUEs?si=w1LwOy2MotdWdWfX&amp;start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+  </div>
+  
+  <div class="w3-row m4 w3-center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LaePayB_pC4?si=i2GqOedZHWmQ_8lK&amp;start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
+
+
+  <div class="w3-row m4 w3-center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JZGOEYkfVwE?si=FZ5l6TQH4IziuD4N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
+ 
+   
+    <div class="w3-row m4 w3-center">
+    <iframe width="560" height="315" <iframe width="560" height="315" src="https://www.youtube.com/embed/yOyWjRr2uvs?si=b5va2MDFE60CPhmW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
+
+
+ 
+<!--end of videos-->
+<!-- End of content page Let's Talk About it-->
+
+
+
+
+
+
+
+<!--3 Year Old Development-make youTube slide video of 3Rex and Moni-->
+<h1>3 Year Old Development</h1>
+<h2>ROAR! I’m Baby Three-Rex, & This Is What The California Department of Education Says About Me</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#ffffff;">
+    <h3>What I'm Like:
+    <p><h4>Watch out! I am charged with physical energy. I do things on my own terms. My mind is a sponge. Reading and socializing are essential in getting me ready for school.  I like to pretend a lot and enjoy scribbling on everything. I am full of questions, many of which are “Why?” I become fairly reliable about using the potty. I may stay dry at night and may not. Playing and trying new things out are how I learn.  Sometimes I like to share. I begin to listen more and begin to understand how to solve problems for myself.</h4></p>
+
+    <h3>What I Need:
+    <p><h4>I want to know about everything and understand words, and when encouraged, I will use words instead of grabbing, crying, or pushing. Play with me, sing to me, and let’s pretend!</h4></p>
+  </div>
+  
+
+  <!--place video here-->
+  <div class="column" style="background-color:#ffffff;">
+    <h3></h3>
+    
+
+
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="images/slideroar.jpg" style="width:100%">
+        <img class="mySlides" src="images/slidebutterfly.jpg" style="width:100%">
+        <img class="mySlides" src="images/slidemywish.jpg" style="width:100%">
+        <img class="mySlides" src="images/slidesnowman.jpg" style="width:100%">
+        <img class="mySlides" src="images/slideeatsnowman.jpg" style="width:100%">
+        <img class="mySlides" src="images/slidehalloweenart.jpg" style="width:100%">
+        <img class="mySlides" src="images/slidetoast.jpg" style="width:100%">
+        <img class="mySlides" src="images/slidespicygirl.jpg" style="width:100%">
+        <img class="mySlides" src="images/slidebubbles.jpg" style="width:100%">
+        <img class="mySlides" src="images/slidestainedglass.jpg" style="width:100%">
+        <img class="mySlides" src="images/slidemoniandme.jpg" style="width:100%">
+        <img class="mySlides" src="images/slidelion.jpg" style="width:100%">
+        <img class="mySlides" src="images/slidestars.jpg" style="width:100%">
+        <img class="mySlides" src="images/slidexmastree.jpg" style="width:100%">
+        <img class="mySlides" src="images/slidesmellflower.jpg" style="width:100%">
+        <img class="mySlides" src="images/slidekissmama.jpg" style="width:100%">
+       
+
+
+      
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      <p></p>
+  </div>
+   
+    <!--start of carousel -->
+    <script>
+      var myIndex = 0;
+carousel();
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {
+    myIndex = 1;
+  }
+  x[myIndex - 1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+// slideshow - carousel
+function currentDiv(n) {
+  showDivs((slideIndex = n));
+  myIndex = n;
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " w3-opacity-off";
+}
+
+      </script>
+      <!--carousel end-->
+
+      <!--end of content for page 3 year old development-->
+
+<!--Footer-->
+ <!-- Footer -->
+ <footer class="w3-center w3-sand w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"
+    ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+  >
+  <div class="w3-xlarge w3-section">
+    <a
+      class="fa fa-twitter w3-hover-opacity w3-text-brown"
+      href="https://twitter.com/"
+      target="_blank"
+    ></a>
+    <a
+      class="fa fa-instagram w3-hover-opacity w3-text-brown"
+      href="https://www.instagram.com/"
+      target="_blank"
+    ></a>
+    <a
+      class="fa fa-linkedin w3-hover-opacity w3-text-brown"
+      href="https://www.linkedin.com/"
+      target="_blank"
+    ></a>
+    <a
+      class="fa fa-pinterest-p w3-hover-opacity w3-text-brown"
+      href="https://www.pinterest.com/"
+      target="_blank"
+    ></a>
+    <a
+      class="fa fa-facebook-official w3-hover-opacity w3-text-brown my-text-decoration"
+      href="https://www.facebook.com/"
+      target="_blank"
+    ></a>
+  </div>
+  <div>
+    <a
+      href="#home"
+      target="_blank"
+      class="w3-hover-opacity w3-text-brown"
+      style="padding-right: 20px"
+      >Privacy Policy</a
+    >
+    <a
+      href="#home"
+      target="_blank"
+      class="w3-hover-opacity w3-text-brown"
+      style="padding-right: 20px"
+      >Terms of User</a
+    >
+    <a href="#home" target="_blank" class="w3-hover-opacity w3-text-brown"
+      >Accessibility</a
+    >
+  </div>
+  <div>
+    <a
+      href="#home"
+      target="_blank"
+      class="w3-hover-opacity w3-text-brown"
+      style="padding-right: 20px"
+      >1-800-823-0825</a
+    >
+    <a
+      href="#home"
+      target="_blank"
+      class="w3-hover-opacity w3-text-brown"
+      style="padding-right: 20px"
+      >TTY: 1-800-143-9177</a
+    >
+  </div>
+  <a
+    href="#"
+    target="_blank"
+    class="fa fa-copyright w3-hover-opacity w3-text-brown"
+    >All Rights Reserved.</a
+  >/div>
+
+  <!--end of footer content-->
+</footer>
+
+  </body>
+</html>

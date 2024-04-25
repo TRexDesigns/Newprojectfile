@@ -1,0 +1,327 @@
+
+/*font styles*/
+
+.barlow-condensed-medium {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .barlow-condensed-bold {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+.didact-gothic-regular {
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+/*my logo*/
+/* Styles for the container */
+.container {
+  padding: 20px; /* Add padding around the container */
+}
+
+/* Styles for the logo */
+.mylogo {
+  padding: 20px; 
+  padding-bottom: 20px;
+  padding-left: 20px;
+  /* Add padding around the logo */
+}
+/*end of logo*/
+
+
+body {
+    background-color: #FFF5F0;
+}
+
+body {
+    font-family: 'Barlow Condensed' ; font-size: 22px;
+    background-color: #FFF5F0;
+    background-size: cover;
+    background-position: center;  }
+
+
+h1 { 
+    font-family: Barlow Condensed, sans-serif;
+    color: #263461;
+    font-size: 96px;
+    font-weight: 700;
+    font-style: normal;
+    padding-left: 20px;
+}
+    
+
+h2 {
+    font-family: Barlow Condensed, sans-serif;
+    color: #C13E80;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+    padding-left: 20px;
+}
+
+
+h3 {
+    font-family: Barlow Condensed, sans-serif;
+    color: #E8673F;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+h4 {
+    font-family: Didact Gothic, sans-serif;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h5 {
+    font-family: Didact Gothic, sans-serif;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+  .header a {
+    float: left;
+    color: rgb(38, 52, 97);
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+
+/*split header*/ 
+.container-header {
+    display: flex;
+    justify-content: space-between; /* Items at each end of the container */
+    align-items: center; /* horizontally center items */
+    padding: 20px; /* Add padding around the container */
+}
+
+
+.header-icon a {
+  display: flex;
+  align-items: center; /* horizontally center icons */
+}
+
+.header-icon a {
+  margin-left: 20px; /* Add spacing between icons */
+}
+
+.header-icon img {
+  height: 30px; /* Adjust height as needed */
+}
+/*end of split header*/ 
+
+
+
+  body,
+  html {
+    height: 100%;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #263461;
+    cursor: pointer;
+  }
+  
+  /*Outdoor Potions -center*/ 
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  video {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Full height image header */
+  .my-bgimg {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/homepageImage.jpg);
+    min-height: 100%;
+  }
+  
+  .my-float-left {
+    float: left;
+    padding-right: 20px;
+  }
+  
+  .my-float-right {
+    float: right;
+    padding-left: 20px;
+  }
+  
+  .my-img-size-1 {
+    max-width: 300px;
+  }
+  
+  .my-img-size-2 {
+    max-width: 500px;
+  }
+  
+  .mySlides {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 65%;
+  }
+  
+  .my-scrolling {
+    height: 300px;
+    overflow: auto;
+    color:rgb(0, 0, 0)
+  }
+  
+  button.w3-button:hover {
+    color: #fff !important;
+    background-color: #C13E80 !important;
+  }
+  
+  a.w3-button:hover {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+  }
+
+ 
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+
+
+
+/*lightbox*/
+
+
+
+/*lightbox end
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*outdoor carosel slideshow*/
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: none;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+/*end of carosel*/
+
+/*Seasonal ____responsize side by side breakfast images..horizontal to :vertical
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 500px) 
+  {
+    .column {
+      width: 100%;
+    }
+  }
+  /*end*/
+
+
+  /*style for 2 column layout 3 yr old development*/
+
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+/* Container for flexboxes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two equal columns */
+.column {
+  flex: 50%;
+  padding: 20px;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+</style>
+
+  /*end of style for 2 column layout 3 yr old development*/
