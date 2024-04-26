@@ -97,7 +97,7 @@ h5 {
   .header a {
     float: left;
     color: rgb(38, 52, 97);
-    text-align: center;
+    text-align: top-left;
     font-size: 16px;
     line-height: 25px;
     padding: 20px;
@@ -106,28 +106,7 @@ h5 {
 }
 
 
-/*split header*/ 
-.container-header {
-    display: flex;
-    justify-content: space-between; /* Items at each end of the container */
-    align-items: center; /* horizontally center items */
-    padding: 20px; /* Add padding around the container */
-}
 
-
-.header-icon a {
-  display: flex;
-  align-items: center; /* horizontally center icons */
-}
-
-.header-icon a {
-  margin-left: 20px; /* Add spacing between icons */
-}
-
-.header-icon img {
-  height: 30px; /* Adjust height as needed */
-}
-/*end of split header*/ 
 
 
 
