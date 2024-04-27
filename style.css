@@ -176,7 +176,9 @@ h5 {
   .my-scrolling {
     height: 300px;
     overflow: auto;
+    background-color: #FFFFFF;
     color:rgb(0, 0, 0)
+    padding-left: 20px
   }
   
   button.w3-button:hover {
@@ -224,21 +226,16 @@ h5 {
 }
 
 /*outdoor carosel slideshow*/
-.carousel {
-  width: 100%;
-  overflow: hidden;
-}
 
-.carousel-slide {
-  display: none;
-}
-
-.carousel-slide img {
-  width: 100%;
-  height: auto;
-}
 
 /*end of carosel*/
+
+
+
+
+
+
+
 
 /*Seasonal ____responsize side by side breakfast images..horizontal to :vertical
 * {
@@ -303,3 +300,105 @@ h5 {
 </style>
 
   /*end of style for 2 column layout 3 yr old development*/
+
+
+
+
+
+
+
+  
+/*start of new footer style*/
+
+body {margin:0; padding: 0;
+  font-family: Barlow Condensed; sans-serif;
+}
+  .footer {
+    text-align: center;
+    font-family: barlow condensed, sans-serif;
+    overflow: hidden;
+    background-color: #FFF5F0;
+    background-size: cover; /* Cover the entire footer area */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+  }
+
+  /* CSS to style the content */
+.content {
+  margin-bottom: 0px; /* Add space between the content and the footer */
+  margin-left: 0px;
+}
+  
+  .footer a {
+    float: left;
+    display: block;
+    color: #263461;
+    text-align: center;
+    padding: 18px 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .footer a:hover {
+    background: #FFFFFF;
+    color: #263461;
+  }
+  
+  .footer a.active {
+    background-color: #FCD3BD;
+    color: peach;
+  }
+  
+  .main {
+    padding: 0px;
+    margin-bottom: 20px;
+    height: 1500px; /* Used in this example to enable scrolling */
+  }
+  
+  .fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    text-align: center;    
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #8DC43E;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #EF6DAB;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #69FAF3;
+    color: white;
+  }
+  
+  .fa-pinterest {
+    background: #E8673F;
+    color: white;
+  }
+
+  /* CSS to style the copyright notice */
+.copyright {
+  clear: both; /* Ensure the content starts on a new line */
+  font-family: barlow condensed, sans-serif;
+  color: #263461;
+}
+  
+  <!--END OF NEW FOOTER STYLE-->

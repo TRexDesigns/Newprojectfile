@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="W3.css">
@@ -38,7 +39,15 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.
 <style type="text/css">
     .center {
   text-align: center;
+  margin: 15px ;
   }
+
+
+/* Reset margins and padding for the body and footer */
+body, footer {
+  margin: 0;
+  padding: 0;
+}
 
   <!--NEW NAV starts-->
   body {
@@ -49,6 +58,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.
 .topnav {
   overflow: hidden;
   background-color: #FFF5F0;
+  background-size: cover; /* Cover the entire footer area */
   padding: 20px 0;
 }
 
@@ -56,10 +66,12 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.
   float: left;
   display: block;
   color: #263461;
+  font-family: Barlow Condensed, sans-serif;
   text-align: center;
   padding: 6px 8px;
   text-decoration: none;
   font-size: 17px;
+  margin-right: 20px;
 }
 
 
@@ -69,7 +81,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.
 }
 
 .topnav a.active {
-  background-color: #FCD3BD;
+ text-decoration: underline;
   color: peach;
 }
 
@@ -121,20 +133,12 @@ body {margin:0;}
   background-color: #000;
 }
 
-.active {
-  background-color: #04AA6D;
-}
+
 
 
 <!--background image with text-->
 
-.hero-text {
-  position: absolute;
-  top: 0; /* Position text at the top of the parent container */
-  left: 0; /* Position text at the left of the parent container */
-  padding: 20px; /* Add padding to provide space around the text */
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color for better readability */
+
 
  /* Full height image header */
   .my-bgimg {
@@ -143,105 +147,13 @@ body {margin:0;}
     align-items:center;
     background-position: center;
     background-size: cover;
-    background-image: url(images/homepageImage.jpg);
+    background-image: url(images/homepageImage.jpg)
     min-height: 100%;
   }
 <!--new nav style ends-->
 
 
-  <!--/*carousel*/--->
-  * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-  <!--/*carousel end*/-->
-
+  
 
 
 
@@ -276,6 +188,8 @@ img {vertical-align: middle;}
 <!--end of responsive video styles-->
 
 
+
+
     </style>
 </head>
 <body>
@@ -286,7 +200,7 @@ img {vertical-align: middle;}
 <div class="topnav" id="myTopnav">
  <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="images/Group 1.png" alt="Logo" style="width:100px;" class="rounded-pill">
+      <img src="images/Group 1.png" alt="Logo" style="width:80px;" class="rounded-pill">
     </a>
   </div>
 
@@ -305,6 +219,7 @@ img {vertical-align: middle;}
     <i class="fa fa-bars"></i>
   </a>
 </div>
+
 </div>
 
 
@@ -324,21 +239,23 @@ function myFunction() {
 <!-- Header with full-height image -->
 
     <header class="my-bgimg w3-display-container" id="home">
-      <div class="hero-image">
-        <div class="hero-text">
+     
          <h2>Come Play With Us</h2>
-        </div>
       </div>
     </header>
 
-   
+    
+    <p><br><br><br><br></p>
+
+  
+
+
+ 
 
 
 
 
 <!--Outdoors-->
-
-
 
 
 <!--Outdoors with carousel-->
@@ -348,113 +265,8 @@ function myFunction() {
   <div class="w3-content" style="max-width: 1200px">
   <h2>Potion Making With Organic and Non-Organic Materials</h2>
 
-<div class="carousel">
-
-    <div class="carousel-slide">
-      <img src="images/potion1.png" alt="potion 1">
-  </div>
-    <div class="carousel-slide">
-      <img src="images/potion2.png" alt="potion 2">
-  </div>
-    <div class="carousel-slide">
-      <img src="images/potion3.png" alt="potion 3">
-  </div>
-    <div class="carousel-slide">
-      <img src="images/potion4.png" alt="potion 4">
-  </div>
-    <div class="carousel-slide">
-      <img src="images/potion5.png" alt="potion 5">
-  </div>
-    <div class="carousel-slide">
-      <img src="images/potion6.png" alt="potion 6">
-  </div>
-      <div class="carousel-slide">
-      <img src="images/potion7.png" alt="potion 7">
-  </div>
-    <div class="carousel-slide">
-      <img src="images/potion8.png" alt="potion 8">
-  </div>
-    <div class="carousel-slide">
-      <img src="images/potion9.png" alt="potion 9">
-  </div>
-    <div class="carousel-slide">
-      <img src="images/potion10.png" alt="potion 10">
-  </div>
-    <div class="carousel-slide">
-      <img src="images/potion11.png" alt="potion 11">
-  </div>
-  <script src="script.js"></script>
-
-</div>
-<a class="next" onclick="plusSlides(1)">❯</a>
-  
-</div>
-<br>
-
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span> 
-  <span class="dot" onclick="currentSlide(5)"></span> 
-  <span class="dot" onclick="currentSlide(6)"></span> 
-  <span class="dot" onclick="currentSlide(7)"></span> 
-  <span class="dot" onclick="currentSlide(8)"></span> 
-  <span class="dot" onclick="currentSlide(9)"></span> 
-  <span class="dot" onclick="currentSlide(10)"></span> 
-  <span class="dot" onclick="currentSlide(11)"></span> 
-
-</div>
-</div>
-<img class="mySlides" src="images/" style="width:100%">
-        <img class="mySlides" src="images/potion1.png" style="width:100%">
-        <img class="mySlides" src="images/potion4.png" style="width:100%">
-        <img class="mySlides" src="images/potion9.png" style="width:100%">
-        <script>
-      var myIndex = 0;
-carousel();
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {
-    myIndex = 1;
-  }
-  x[myIndex - 1].style.display = "block";
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-
-// slideshow - carousel
-function currentDiv(n) {
-  showDivs((slideIndex = n));
-  myIndex = n;
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = x.length;
-  }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-  }
-  x[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " w3-opacity-off";
-}
-
-      </script>
+  <p><br></p>
+     
 <!----/*end of carousel*/---->
 
 <!--end of carousel-->
@@ -462,35 +274,18 @@ function showDivs(n) {
 
 
 
-<!--DIY "you are my everything potion" w/ scroll--> 
+<!--DIY "DIY potion w/ scroll--> 
     
+        
       <div
         class="w3-center w3-brown"
-        style="margin-left: -16px; margin-right: -16px; margin-top: -18px"
-      > 
-    </div>
-    <div
-      class="w3-col m4 w3-panel w3-brown w3-border-left w3-border-top w3-border-bottom w3-padding"
-    >
-      <div
-        class="w3-center w3-sand"
-        style="margin-left: -16px; margin-right: -16px; margin-top: -18px"
-      >
-      </div>
-    </div>
-
-    <div
-      class="w3-col m4 w3-panel w3-sand w3-border-left w3-border-bottom w3-border-right w3-padding"
-    >
-      <div
-        class="w3-center w3-brown"
-        style="margin-left: -16px; margin-right: -16px; margin-top: -18px"
-      >
+        style="margin-left: 16px; margin-right: 16px; margin-top: 16px; margin-bottom: 16px;">
         <h3>DIY Potion Recipe: Don't Worry, Be Happy</h3>
         
       </div>
-      <div class="my-scrolling" style="padding-right: 10px">
+      <div class="my-scrolling" style="padding-right: 20px">
         <p>
+          
           <h4>PREPARATION: 
           potion bottle with lid (or jar), glitter, feather
           </p>
@@ -533,18 +328,20 @@ function showDivs(n) {
 <!--end of content page "outdoors"-->
 
 
+<p><br><br><br><br></p>
 
 <!--Indoors-->
 <!--Indoors with table grid-->
 
 
  <!-- Indoor Activity Chart -->
- <div id="Indoors" class="w3-padding-top-64">
+ <div id="Indoors" class="w3-padding-top-64, margin-left: 20px;">
   <h1 class="w3-center">Indoors</h1>
   <div class="w3-content" style="max-width: 1200px"> 
   <h2>Activity Chart For Planning Your Day </h2>
     <div class="w3-responsive">
-    
+      <p><br></p>
+
     <table id="myTable" class="w3-table-all">
       <thead>
         <tr class="w3-brown">
@@ -633,9 +430,11 @@ function showDivs(n) {
 <!--end of content page "indoors"-->
 
 
+<p><br><br><br><br></p>
 
 <!--Seasonal-->
 <!--Seasonal with pic and text wrap(2) and hyperlinks(2)-->
+
 
     <div class="w3-content" style="max-width: 1200px">
       <!--  -->
@@ -643,7 +442,10 @@ function showDivs(n) {
         <h1 class="w3-center">Seasonal Fun</h1>
         <div class="w3-padding-large">
           <h2>It's Almost Valentine's Day. The Theme Is Hearts.</h2>
+          <p><br></p>
+
           <h3>Morning Craft</h3>
+          <p><br></p>
           <p>
             <img
               src="images/img:vdayprep.jpg"
@@ -697,6 +499,7 @@ function showDivs(n) {
     <img src="images/np_Heart shaped waffles top view on a green table_5rWm14_free 1.png" alt="waffles" style="width:100%">
   </div>
 </div>
+<p><br></p>
 
         <div class="w3-padding-large">
           <h3>Educational Play</h3>
@@ -750,6 +553,7 @@ function showDivs(n) {
 <!--end of seasonal-->
 <!--end of content page "Seasonal"-->
 
+<p><br><br><br><br></p>
 
 
 <!--Affirmations-->
@@ -775,7 +579,12 @@ function showDivs(n) {
             <div class="w3-row-padding" style="margin: 15px 0px">
               <div class="w3-col s4">
 
+<p><br></p>
+
+
             <h2>Mindful Affirmation Reminders</h2>
+
+<p><br></p>
 
             <div class="row">
   <div class="column">
@@ -813,7 +622,9 @@ function showDivs(n) {
 
 <!--End of Picture Grid w/ Lightbox-affirmations-->
 
+<p><br></p>
 <h2>Morning and Evening Affirmations</h2>
+<p><br></p>
 
 
 <!--start of Accordion content-affirmations-->
@@ -904,6 +715,7 @@ function showDivs(n) {
 
 
 
+<p><br><br><br><br></p>
 
 
 <!--Let's Talk About it YouTube Videos(2)-->
@@ -950,6 +762,7 @@ function showDivs(n) {
 
 
 
+<p><br><br><br><br></p>
 
 
 <!--3 Year Old Development-make youTube slide video of 3Rex and Moni-->
@@ -964,13 +777,13 @@ function showDivs(n) {
     <h3>What I Need:
     <p><h4>I want to know about everything and understand words, and when encouraged, I will use words instead of grabbing, crying, or pushing. Play with me, sing to me, and let’s pretend!</h4></p>
   </div>
+  </div>
   
 
-  <!--place video here-->
   <div class="column" style="background-color:#ffffff;">
     <h3></h3>
     
-
+    <!--place slideshow here-->
 
     <div class="w3-content w3-display-container">
         <img class="mySlides" src="images/slideroar.jpg" style="width:100%">
@@ -1048,83 +861,38 @@ function showDivs(n) {
 
       <!--end of content for page 3 year old development-->
 
-<!--Footer-->
- <!-- Footer -->
- <footer class="w3-center w3-sand w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"
-    ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
-  >
-  <div class="w3-xlarge w3-section">
-    <a
-      class="fa fa-twitter w3-hover-opacity w3-text-brown"
-      href="https://twitter.com/"
-      target="_blank"
-    ></a>
-    <a
-      class="fa fa-instagram w3-hover-opacity w3-text-brown"
-      href="https://www.instagram.com/"
-      target="_blank"
-    ></a>
-    <a
-      class="fa fa-linkedin w3-hover-opacity w3-text-brown"
-      href="https://www.linkedin.com/"
-      target="_blank"
-    ></a>
-    <a
-      class="fa fa-pinterest-p w3-hover-opacity w3-text-brown"
-      href="https://www.pinterest.com/"
-      target="_blank"
-    ></a>
-    <a
-      class="fa fa-facebook-official w3-hover-opacity w3-text-brown my-text-decoration"
-      href="https://www.facebook.com/"
-      target="_blank"
-    ></a>
-  </div>
-  <div>
-    <a
-      href="#home"
-      target="_blank"
-      class="w3-hover-opacity w3-text-brown"
-      style="padding-right: 20px"
-      >Privacy Policy</a
-    >
-    <a
-      href="#home"
-      target="_blank"
-      class="w3-hover-opacity w3-text-brown"
-      style="padding-right: 20px"
-      >Terms of User</a
-    >
-    <a href="#home" target="_blank" class="w3-hover-opacity w3-text-brown"
-      >Accessibility</a
-    >
-  </div>
-  <div>
-    <a
-      href="#home"
-      target="_blank"
-      class="w3-hover-opacity w3-text-brown"
-      style="padding-right: 20px"
-      >1-800-823-0825</a
-    >
-    <a
-      href="#home"
-      target="_blank"
-      class="w3-hover-opacity w3-text-brown"
-      style="padding-right: 20px"
-      >TTY: 1-800-143-9177</a
-    >
-  </div>
-  <a
-    href="#"
-    target="_blank"
-    class="fa fa-copyright w3-hover-opacity w3-text-brown"
-    >All Rights Reserved.</a
-  >/div>
 
-  <!--end of footer content-->
+     
+
+<!--Footer-->
+ <!--START OF NEW FOOTER-->
+ <div class="footer">
+  <a href="#To the Top">To the Top</a>
+  <a href="#Terms and Policy">Terms and Policy</a>
+  <a href="#Contact">Contact</a>
+
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-youtube"></a>
+  <a href="#" class="fa fa-instagram"></a>
+  <a href="#" class="fa fa-pinterest"></a>
+  <div class="copyright">
+    <p>&copy; 2024 MoniandThreeRex. All Rights Reserved.</p>
+   
+  </div>
+  </div>
+
+<p><br><br><br><br></p>
+
+<p><br><br><br><br></p>
+
+
 </footer>
+  <!--end of footer content-->
+
+
+
+
+
 
   </body>
 </html>
