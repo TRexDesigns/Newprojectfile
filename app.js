@@ -1,5 +1,19 @@
 console.log("Hello from app.js");
 
+
+//JAVA FOR NEW POTION SLIDESHOW-->
+
+//END OF NEW POTION SLIDESHOW GALLERY
+
+
+
+
+
+
+
+
+
+
 //slideshow js
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -27,7 +41,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += "active";
 }
-</script>
 //end of slideshow js//
 
 
@@ -57,7 +70,6 @@ function myAccordion(id) {
       );
   }
 }
-</script>
 
 
 /*Affirmation end*/

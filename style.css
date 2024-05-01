@@ -36,9 +36,7 @@
 /*end of logo*/
 
 
-body {
-    background-color: #FFF5F0;
-}
+
 
 body {
     font-family: 'Barlow Condensed' ; font-size: 22px;
@@ -114,6 +112,8 @@ h5 {
     height: 100%;
     font-size: 20px;
     line-height: 1.8;
+    margin-left: 10px; /* Add space on the left side */
+    margin-right: 10px;
   }
   
   a {
@@ -202,7 +202,9 @@ h5 {
 
 
 
-/*lightbox*/
+
+
+  /*lightbox*/
 
 
 
@@ -225,10 +227,8 @@ h5 {
   display: table;
 }
 
-/*outdoor carosel slideshow*/
-
-
-/*end of carosel*/
+/*outdoor NEW POTION slideshow*/
+/*end of NEW POTION GALLERY*/
 
 
 
