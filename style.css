@@ -231,6 +231,62 @@ h5 {
 /*end of NEW POTION GALLERY*/
 
 
+/*NEW ACCORDION*/
+/* Style the accordion container */
+.accordion-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Style the buttons */
+.accordion {
+  background-color: #ffffff;
+  color: #C13E80;
+  cursor: pointer;
+  padding: 18px;
+  width: calc(50% - 9px); /* Set width to 50% of container width with margin */
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin-right: 6px; /* Add some space between buttons */
+  order: 2; /* Set the order of the buttons */
+
+}
+/* For small screens, display buttons in a column */
+@media screen and (max-width: 600px) {
+  .accordion {
+    width: 100%;
+  }
+}
+
+
+/* Ensure last button doesn't have a margin */
+.accordion:last-child {
+  margin-right: 0;
+}
+
+/* Style the panels */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 100%; /* Take up full width */
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/*END OF NEW ACCORDION*/
+
+
+
+
+
 
 
 
@@ -263,6 +319,18 @@ h5 {
     }
   }
   /*end*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   /*style for 2 column layout 3 yr old development*/

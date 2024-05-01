@@ -6,8 +6,26 @@ console.log("Hello from app.js");
 //END OF NEW POTION SLIDESHOW GALLERY
 
 
+//NEW ACCORDION
+// Get all the accordion buttons
+var accordions = document.getElementsByClassName("accordion");
 
-
+// Loop through them and add event listeners
+for (var i = 0; i < accordions.length; i++) {
+  accordions[i].addEventListener("click", function() {
+    // Toggle active class to highlight the clicked button
+    this.classList.toggle("active");
+    
+    // Toggle panel visibility
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+//END OF NEW ACCORDION
 
 
 
@@ -50,26 +68,6 @@ function showSlides(n) {
 
 /*Affirmations____Accordion and Lightbox*/
 
-//accordion//
-
-function myAccordion(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className =
-      x.previousElementSibling.className.replace(
-        "w3-brown",
-        "w3-2021-raspberry-sorbet"
-      );
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-    x.previousElementSibling.className =
-      x.previousElementSibling.className.replace(
-        "w3-2021-raspberry-sorbet",
-        "w3-brown"
-      );
-  }
-}
 
 
 /*Affirmation end*/

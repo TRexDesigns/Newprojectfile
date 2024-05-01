@@ -192,7 +192,7 @@ img {vertical-align: middle;}
 }
 
 .active {
-  background-color: #717171;
+  background-color: #C13E80;
 }
 
 /* Fading animation */
@@ -742,22 +742,18 @@ function showSlides() {
 
 <!--start of Accordion content-affirmations-->
 
-      <div class="w3-row">
-        <div class="w3-col s6 w3-left" style="padding-right: 3px">
-          <button
-            onclick="myAccordion('accordion1')"
-            class="w3-button w3-block w3-brown w3-center-align"
-          >
+    
 
-          
-            <h4>Start Your Day With Positivity <i class="fa fa-caret-down"></i></h4>
-          </button>
-          <div
-            id="accordion1"
-            class="w3-hide w3-container"
-            style="height: 260px"
-          >
-            <p>
+  
+      
+<!--end of content page Affirmations-->
+
+
+<!--NEW ACCORDION-->
+<div class="accordion-container">
+  <button class="accordion"><h3>Start Your Day With Positivity</h3></button>
+  <div class="panel">
+    <p>
             <ul>
               <li>Everyday is a fresh start</li>
               <li>Today I will face my fears</li>
@@ -769,22 +765,11 @@ function showSlides() {
               <li>I have people that care about me</li>
             </ul>
           </p>
-          </div>
-        </div>
-        <div class="w3-col s6 w3-left" style="padding-left: 3px">
-          <button
-            onclick="myAccordion('accordion2')"
-            class="w3-button w3-block w3-brown w3-center-align"
-          >
-            <h4>End Your Day With Positivity <i class="fa fa-caret-down"></i></h4>
-          </button>
-          <div
-            id="accordion2"
-            class="w3-hide w3-container"
-            style="height: 260px"
-          >
-            <p>
-              <ul>
+  </div>
+
+  <button class="accordion"><h3>End Your Day With Positivity</h3></button>
+  <div class="panel">
+    <p><ul>
               <li>Today I choose happiness</li>
               <li>I am safe</li>
               <li>I make a differnce</li>
@@ -795,39 +780,26 @@ function showSlides() {
               <li>I have good manners</li>
             </ul>
             </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script>
-  function myAccordion(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-      x.previousElementSibling.className =
-        x.previousElementSibling.className.replace(
-          "w3-brown",
-          "w3-2021-raspberry-sorbet"
-        );
+  </div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
     } else {
-      x.className = x.className.replace(" w3-show", "");
-      x.previousElementSibling.className =
-        x.previousElementSibling.className.replace(
-          "w3-2021-raspberry-sorbet",
-          "w3-brown"
-        );
+      panel.style.maxHeight = panel.scrollHeight + "px";
     }
-  }
+  });
+}
 </script>
-     
-    </div>
-
-  
-      
-<!--end of content page Affirmations-->
-
-
-
+<!--END NEW ACCORDION-->
 <p><br><br><br><br></p>
 
 
